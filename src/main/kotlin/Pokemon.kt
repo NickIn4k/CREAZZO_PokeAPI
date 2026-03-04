@@ -15,7 +15,7 @@ data class Pokemon (
 
     fun getWeight(): Int = weight
 
-    fun getTypes(): String = types.joinToString(" ")
+    fun getTypes(): List<TypeInfo> = types
 
     override fun toString() : String {
         var msg = ""
